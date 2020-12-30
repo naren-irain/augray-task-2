@@ -1,11 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Augray | Task 2</title>
+
+    <link rel="stylesheet" href="./assets/css/lib/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style-augray.css" />
 </head>
+
 <body>
+<div class="main">
+
+    <!-- Header -->
+    <header class="navbar navbar-expand mb-4">
+        <div class="container">
+            <button class="btn d-md-none p-0 mr-3" type="button">
+                <svg width="30" height="30"><use xlink:href="#symbol_menu"></use></svg>
+            </button>
+            <h1 class="navbar-brand mb-0"><a href="">Augray <span>QR</span></a></h1>
+            <ul class="navbar-nav ml-md-auto">
+                <li><a href="" class="nav-link ml-2">Login</a></li>
+                <li><a href="" class="nav-link ml-2">Explore</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container main-container">
+        
+        <!-- Progress section -->
+        <div class="clearfix">
+            <div class="progress-box px-4 py-3 mb-3 float-right">
+                <div class="d-flex mb-3 justify-content-between">
+                    <i class="progress-icon completed">
+                        <svg width="1.1em" height="1.1em"><use xlink:href="#symbol_marker"></use></svg>
+                        <small>1</small>
+                    </i>
+                    <i class="progress-icon current">
+                        <svg width="1.1em" height="1.1em"><use xlink:href="#symbol_marker"></use></svg>
+                        <small>2</small>
+                    </i>
+                    <i class="progress-icon">
+                        <svg width="1.1em" height="1.1em"><use xlink:href="#symbol_marker"></use></svg>
+                        <small>3</small>
+                    </i>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    <svg width="1.1em" height="1.1em"><use xlink:href="#symbol_plane"></use></svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main section -->
+        <div class="d-sm-flex">
+            <div class="col-preview text-center">
+                <figure class="mb-2">
+                    <img src="./assets/img/uploads/img-user-profile.png" alt="" />
+                </figure>
+                <button class="btn btn-primary">Continue</button>
+            </div>
+
+            <div class="col-settings">
+
+                <div class="frame-selection-section mb-3">
+                    <div class="frame-selection-header d-flex">
+                        <ul class="nav">
+                            <li class="nav-item"><a class="nav-link active" href="#">Top</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Body Type</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Hair</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Pants/Shorts</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Gear</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Accessorie</a></li>
+                        </ul>
+                        <div class="search-box input-group">
+                            <div class="input-group-prepend">
+                                <svg width="1.1em" height="1.1em"><use xlink:href="#symbol_search"></use></svg>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Search" />
+                        </div>
+                    </div>
+
+                    <div class="frames-list d-flex flex-wrap">
+                        <div class="frame-box card ft-none ft-active">
+                            <i class="none-icon">&times;</i>
+                            <span>None</span>
+                        </div>
+                        <div class="frame-box card ft-active">
+                            <img src="./assets/img/frames/frame-hair-1.jpg" alt="Hair" />
+                        </div>
+                        <div class="frame-box card ft-active">
+                            <img src="./assets/img/frames/frame-hair-2.jpg" alt="Hair" />
+                        </div>
+                        <div class="frame-box card ft-active">
+                            <img src="./assets/img/frames/frame-hair-3.jpg" alt="Hair" />
+                        </div>
+                        <div class="frame-box card ft-active">
+                            <img src="./assets/img/frames/frame-mustache-1.jpg" alt="Mustache" />
+                        </div>
+                        <div class="frame-box card ft-active">
+                            <img src="./assets/img/frames/frame-beard-1.jpg" alt="Beard" />
+                        </div>
+                        <div class="frame-box card ft-active">
+                            <img src="./assets/img/frames/frame-shirt-1.jpg" alt="Shirt" />
+                        </div>
+                        <div class="frame-box card ft-locked">
+                            <img src="./assets/img/frames/frame-shirt-2.jpg" alt="Shirt" />
+                            <div class="frame-overlay"><span>Unlock Paid Features</span></div>
+                        </div>
+                        <div class="frame-box card ft-locked">
+                            <img src="./assets/img/frames/frame-tank-1.jpg" alt="Tank" />
+                            <div class="frame-overlay"><span>Unlock Paid Features</span></div>
+                        </div>
+                        <div class="frame-box card ft-locked">
+                            <img src="./assets/img/frames/frame-short-1.jpg" alt="Shorts" />
+                            <div class="frame-overlay"><span>Unlock Paid Features</span></div>
+                        </div>
+                        <div class="frame-box card ft-locked">
+                            <img src="./assets/img/frames/frame-pant-1.jpg" alt="Pant" />
+                            <div class="frame-overlay"><span>Unlock Paid Features</span></div>
+                        </div>
+                        <div class="frame-box card ft-locked">
+                            <img src="./assets/img/frames/frame-hat-1.jpg" alt="Hat" />
+                            <div class="frame-overlay"><span>Unlock Paid Features</span></div>
+                        </div>
+                        <div class="frame-box card ft-locked">
+                            <img src="./assets/img/frames/frame-specs-1.jpg" alt="Specs" />
+                            <div class="frame-overlay"><span>Unlock Paid Features</span></div>
+                        </div>
+                        <div class="frame-box card ft-locked">
+                            <img src="./assets/img/frames/frame-specs-2.jpg" alt="Specs" />
+                            <div class="frame-overlay"><span>Unlock Paid Features</span></div>
+                        </div>
+                        <div class="frame-box card ft-locked">
+                            <img src="./assets/img/frames/frame-specs-2.jpg" alt="Specs" />
+                            <div class="frame-overlay"><span>Unlock Paid Features</span></div>
+                        </div>
+                        <div class="frame-box card ft-locked">
+                            <img src="./assets/img/frames/frame-shoe-1.jpg" alt="Sandles" />
+                            <div class="frame-overlay"><span>Unlock Paid Features</span></div>
+                        </div>
+                        <div class="frame-box card ft-locked">
+                            <img src="./assets/img/frames/frame-shoe-2.jpg" alt="Shoe" />
+                            <div class="frame-overlay"><span>Unlock Paid Features</span></div>
+                        </div>
+                        <div class="frame-box card ft-locked">
+                            <img src="./assets/img/frames/frame-shoe-3.jpg" alt="Sandles" />
+                            <div class="frame-overlay"><span>Unlock Paid Features</span></div>
+                        </div>
+                    </div>
+                </div> <!-- Frames selection end -->
+
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-secondary">Reset</button>
+                    <button type="button" class="btn btn-secondary">Random</button>
+                </div>
+
+            </div> 
+
+            <div class="text-center d-md-none">
+                <button class="btn btn-primary">Save & Next</button>
+            </div>
+        </div>
+
+    </div> <!-- Main container -->
+
+</div>
+
+
+
     
+    
+    
+    
+    
+
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+    
+<script src="./assets/js/lib/jquery-3.5.1.slim.min.js"></script>
+<script src="./assets/js/lib/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/script-augray.js"></script>
+
+<!-- SVG Sprite Icons -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <defs>
+        <symbol id="symbol_marker" viewBox="0 0 384 512">
+            <path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0z" fill="currentColor" stroke="none" />
+        </symbol>
+
+        <symbol id="symbol_menu" viewBox="0 0 30 30">
+            <title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path>
+        </symbol>
+
+        <symbol id="symbol_back" viewBox="0 0 448 512">
+            <path d="M193.456 357.573L127.882 292H424c13.255 0 24-10.745 24-24v-24c0-13.255-10.745-24-24-24H127.882l65.574-65.573c9.373-9.373 9.373-24.569 0-33.941l-16.971-16.971c-9.373-9.373-24.569-9.373-33.941 0L7.029 239.029c-9.373 9.373-9.373 24.568 0 33.941l135.515 135.515c9.373 9.373 24.569 9.373 33.941 0l16.971-16.971c9.373-9.372 9.373-24.568 0-33.941z" fill="currentColor" />
+        </symbol>
+
+        <symbol id="symbol_search" viewBox="0 0 512 512">
+            <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" fill="currentColor"/>
+        </symbol>
+
+        <symbol id="symbol_plane" viewBox="0 0 576 512">
+            <path d="M480 192H365.71L260.61 8.06A16.014 16.014 0 0 0 246.71 0h-65.5c-10.63 0-18.3 10.17-15.38 20.39L214.86 192H112l-43.2-57.6c-3.02-4.03-7.77-6.4-12.8-6.4H16.01C5.6 128-2.04 137.78.49 147.88L32 256 .49 364.12C-2.04 374.22 5.6 384 16.01 384H56c5.04 0 9.78-2.37 12.8-6.4L112 320h102.86l-49.03 171.6c-2.92 10.22 4.75 20.4 15.38 20.4h65.5c5.74 0 11.04-3.08 13.89-8.06L365.71 320H480c35.35 0 96-28.65 96-64s-60.65-64-96-64z" fill="currentColor"/>
+        </symbol>
+    </defs>
+</svg>
+
 </body>
 </html>
